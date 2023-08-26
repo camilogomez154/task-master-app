@@ -34,9 +34,28 @@ const TaskDetailScreenStyles = StyleSheet.create({
         backgroundColor: 'white',
         marginHorizontal: 30,
         borderRadius: 10,
+        marginBottom: 15,
         padding: 30,
     },
     taskTitle: {
+        fontWeight: 'bold',
+        marginBottom: 15,
+        fontSize: 25,
+    },
+    taskDescription: {
+        marginBottom: 15
+    },
+    taskStatus: {
+        fontWeight: '800'
+    },
+    acceptanceCriteriaWrapper: {
+        backgroundColor: 'white',
+        marginHorizontal: 30,
+        borderRadius: 10,
+        marginBottom: 15,
+        padding: 30,
+    },
+    acceptanceCriteriaTitle: {
         fontWeight: 'bold',
         marginBottom: 15,
         fontSize: 25,
@@ -66,8 +85,37 @@ export function TaskDetailScreen({ }: TaskDetailScreenProperties): JSX.Element {
 
             <View style={TaskDetailScreenStyles.taskWrapper}>
                 <Text style={TaskDetailScreenStyles.taskTitle}>{params.task.name}</Text>
-                <Text>{params.task.description}</Text>
+                <Text style={TaskDetailScreenStyles.taskDescription}>{params.task.description}</Text>
+                <Text style={TaskDetailScreenStyles.taskStatus}>{params.task.status}</Text>
             </View>
+
+            {
+                params.task.acceptanceCriteria &&
+                <View style={TaskDetailScreenStyles.acceptanceCriteriaWrapper}>
+                    <Text style={TaskDetailScreenStyles.acceptanceCriteriaTitle}>
+                        Acceptance criteria
+                    </Text>
+                    {
+                        params.task.acceptanceCriteria.map((criteria, index) => (
+                            <Text key={index}>{criteria}</Text>
+                        ))
+                    }
+                </View>
+            }
+
+            {
+                params.task.responsibles &&
+                <View style={TaskDetailScreenStyles.acceptanceCriteriaWrapper}>
+                    <Text style={TaskDetailScreenStyles.acceptanceCriteriaTitle}>
+                        Responsibles
+                    </Text>
+                    {
+                        params.task.responsibles.map((criteria, index) => (
+                            <Text key={index}>{criteria}</Text>
+                        ))
+                    }
+                </View>
+            }
 
         </SafeAreaView>
     );

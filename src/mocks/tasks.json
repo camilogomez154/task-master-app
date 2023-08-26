@@ -6,10 +6,13 @@
         "status": "In progress",
         "isActive": true,
         "acceptanceCriteria": [
-
+            "The user couldn´t exists on database",
+            "The user has a unique id",
+            "The user contain a email"
         ],
         "responsibles": [
-            
+            "Johan C. Delgado G.",
+            "Pepito J. Perez"
         ]
     },
     {
