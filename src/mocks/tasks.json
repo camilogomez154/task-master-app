@@ -1,0 +1,9 @@
+[
+    {
+        "id": "task-0001",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    }
+]
