@@ -4,6 +4,54 @@
         "name": "Create new users",
         "description": "Create new users into database that to manage each record.",
         "status": "In progress",
+        "isActive": true,
+        "acceptanceCriteria": [
+
+        ],
+        "responsibles": [
+            
+        ]
+    },
+    {
+        "id": "task-0002",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    },
+    {
+        "id": "task-0003",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    },
+    {
+        "id": "task-0004",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    },
+    {
+        "id": "task-0005",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    },
+    {
+        "id": "task-0006",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
+        "isActive": true
+    },
+    {
+        "id": "task-0007",
+        "name": "Create new users",
+        "description": "Create new users into database that to manage each record.",
+        "status": "In progress",
         "isActive": true
     }
 ]
